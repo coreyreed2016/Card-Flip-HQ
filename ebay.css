@@ -1,0 +1,55 @@
+/* eBay integration styles. Reuses the app's theme variables. */
+#modal.ebay-wide{width:min(1100px,96vw)}
+.ebay-fields{border-top:1px solid var(--line);padding-top:12px}
+.ebay-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:12px}
+.ebay-wide-field{grid-column:1/-1}
+.ebay-actions{display:flex;gap:9px;flex-wrap:wrap;align-items:end;margin:10px 0}
+.ebay-panel code,.ebay-help code{background:#0b1626;padding:1px 5px;border-radius:5px;font-size:12px}
+.ebay-help{margin:12px 0;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:#0e1a2c}
+.ebay-help summary{cursor:pointer;font-weight:700;color:var(--blue)}
+.ebay-help ol{margin:10px 0 2px;padding-left:20px;color:#c6d5e8;font-size:13px}
+.ebay-msg{margin:10px 0;padding:9px 12px;border-radius:9px;border:1px solid #346089;background:#12263f;font-size:13px}
+.ebay-msg.bad{border-color:#8a3145;background:#2a1520;color:#ffb3c0}
+.ebay-msg.warn{border-color:#8a6a2a;background:#2a2314;color:#ffd98a}
+.ebay-env{display:inline-block;font-size:11px;font-weight:800;border-radius:999px;padding:3px 9px;vertical-align:middle}
+.ebay-env.sb{background:#3a2e10;color:#ffd98a;border:1px solid #8a6a2a}
+.ebay-env.prod{background:#123324;color:#7ee6b8;border:1px solid #2b7a58}
+.ebay-sandbox{font-size:10px;font-weight:800;color:#ffd98a;border:1px solid #8a6a2a;border-radius:999px;padding:1px 6px}
+.ebay-badge-wrap{margin-top:4px}
+.ebay-badge{display:inline-block;font-size:11px;border-radius:999px;padding:3px 9px;font-weight:750;background:#183451;color:#a9d6ff;border:1px solid #346089}
+.ebay-s-active-on-ebay,.ebay-b-active-on-ebay,.ebay-b-ready,.ebay-b-offer-created{background:#123324;color:#7ee6b8;border-color:#2b7a58}
+.ebay-s-sold{background:#2b2150;color:#cdb8ff;border-color:#6a52b8}
+.ebay-s-validation-failed,.ebay-s-sync-error,.ebay-b-invalid,.ebay-b-failed,.ebay-b-error{background:#2a1520;color:#ff9fb0;border-color:#8a3145}
+.ebay-s-ended,.ebay-s-not-listed,.ebay-b-not-attempted{background:#1b2636;color:#9dafc5;border-color:#3b5879}
+.ebay-s-ready-for-review,.ebay-s-offer-created,.ebay-b-warnings{background:#2a2314;color:#ffd98a;border-color:#8a6a2a}
+.ebay-btn{border-color:#3a76b5!important;color:#9fd0ff}
+.ebay-list{margin:8px 0;padding:8px 12px 8px 28px;border-radius:9px;font-size:13px}
+.ebay-list.err{background:#2a1520;color:#ffb3c0;border:1px solid #8a3145}
+.ebay-list.warn{background:#2a2314;color:#ffd98a;border:1px solid #8a6a2a}
+.ebay-list.note{background:#0e1a2c;color:var(--subtle);border:1px solid var(--line)}
+.ebay-photos,.ebay-prev-photos{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+.ebay-photo{margin:0;width:128px}
+.ebay-photo img{width:128px;height:128px;object-fit:cover;border-radius:8px;border:1px solid var(--line);background:#000}
+.ebay-photo figcaption{display:flex;gap:4px;align-items:center}
+.ebay-photo select{margin:4px 0;padding:4px;font-size:12px}
+.ebay-prev-photos img{height:110px;border-radius:7px;border:1px solid var(--line)}
+.ebay-upload{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+.ebay-upload select,.ebay-upload input{width:auto;margin:0}
+.ebay-preview{border:1px solid var(--line);border-radius:12px;padding:14px;margin:14px 0;background:#0e1a2c}
+.ebay-price{font-size:18px;font-weight:800}
+.ebay-desc{white-space:pre-wrap;font:13px/1.5 inherit;background:#0b1626;border-radius:8px;padding:10px;max-height:240px;overflow:auto}
+.ebay-kv{margin:10px 0;max-width:560px}
+.ebay-kv caption{text-align:left;font-weight:700;padding:6px 0;color:#c6d5e8}
+.ebay-kv th{text-transform:none;font-size:13px;letter-spacing:0;color:#9dafc5;width:55%;padding:6px 9px}
+.ebay-kv td{padding:6px 9px}
+.ebay-profit .loss,.loss{color:var(--danger)}
+.ebay-profit .gain{color:var(--success)}
+.ebay-approve{border:1px solid #8a6a2a;background:#1f1a0d;border-radius:12px;padding:14px;margin:16px 0}
+.ebay-approve.prod{border-color:#8a3145;background:#22111a}
+.ebay-check{display:flex;gap:9px;align-items:flex-start;margin:8px 0;font-weight:600}
+.ebay-check input{width:auto;margin:3px 0 0}
+.ebay-bulk td,.ebay-bulk th{padding:8px 7px}
+.ebay-price-in{width:92px;padding:6px}
+.ebay-detail{max-width:280px;font-size:12px}
+.ebay-flag{color:#ffd98a;font-size:11px}
+@media(max-width:760px){.ebay-grid{grid-template-columns:1fr}#modal.ebay-wide{width:98vw}.ebay-photo,.ebay-photo img{width:100px}.ebay-photo img{height:100px}}

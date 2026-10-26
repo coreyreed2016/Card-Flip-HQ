@@ -1,0 +1,11 @@
+{
+  "name": "aura-exchange",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Aura Exchange trading-card dashboard with a local eBay Sell API integration server.",
+  "engines": { "node": ">=20.12" },
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "node --test test/ebay.test.js"
+  }
+}
